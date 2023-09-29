@@ -1,0 +1,12 @@
+CREATE TABLE users(
+    id BIGINT NOT NULL AUTO_INCREMENT,
+    email VARCHAR(100) NOT NULL UNIQUE,
+    password VARCHAR(100) NOT NULL,
+    user_type VARCHAR(100) NOT NULL,
+    name VARCHAR(100) NOT NULL,
+    lastname VARCHAR(100) NOT NULL,
+    flag TINYINT NOT NULL,
+
+    PRIMARY KEY (id)
+);
+
